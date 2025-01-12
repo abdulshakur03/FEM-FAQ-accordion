@@ -6,17 +6,26 @@
   box-sizing: border-box;
   font-family: "Work Sans", serif;
 }
+html,
+body {
+  height: 100vh;
+}
 body {
   background-color: hsl(275, 100%, 97%);
+  width: 100%;
 }
 
 .hide {
   display: block;
   max-height: 20px;
 }
+.wrapper {
+  position: relative;
+  width: 100%;
+}
 
 .container {
-  max-width: 600px;
+  max-width: 40%;
   background-color: white;
   padding: 2.5rem;
   padding-top: 1.5em;
@@ -57,8 +66,6 @@ span {
 .active {
   font-size: 0.9em;
   max-width: 90%;
-  max-height: 1000px;
-  transition: max-height 0.6s ease;
   color: rgb(148, 143, 148);
   font-weight: 500;
 }
@@ -72,13 +79,15 @@ footer {
   /* color: green; */
 }
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
   html,
   body {
+    width: 100%;
+    height: 100vh;
     min-width: 280px;
   }
   .container {
-    max-width: 450px;
+    width: 100%;
     padding: 2rem;
     min-width: 280px;
   }
