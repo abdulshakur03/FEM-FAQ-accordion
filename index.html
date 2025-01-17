@@ -21,27 +21,28 @@
   </head>
   <body>
     <div class="wrapper">
-      <picture>
-        <source
-          srcset="background-pattern-mobile.svg"
-          media="(max-width: 600px)"
+      <div class="picture">
+        <img
+          src="background-pattern-mobile.svg"
+          alt="mobile"
+          class="img mobile-image"
         />
-        <source
-          srcset="background-pattern-desktop.svg"
-          media="(max-width: 1440px)"
+        <img
+          src="background-pattern-desktop.svg"
+          alt="desktop"
+          class="img desktop-image"
         />
-        <img src="background-pattern-desktop.svg" alt="responsive" />
         <!-- Fallback image -->
-      </picture>
+      </div>
 
       <div class="container">
-        <span class="header">
+        <div class="header">
           <img src="icon-star.svg" alt="star" />
           <h1>FAQs</h1>
-        </span>
+        </div>
         <main>
           <section class="section" id="one">
-            <span>
+            <div class="flex">
               <h2 class="h2">
                 What is Frontend Mentor, and how will it help me?
               </h2>
@@ -50,7 +51,7 @@
                 alt="add"
                 class="add-button"
               />
-            </span>
+            </div>
             <p class="hidden-text">
               Frontend Mentor offers realistic coding challenges to help
               developers improve their frontend coding skills with projects in
@@ -59,14 +60,14 @@
             </p>
           </section>
           <section class="section" id="two">
-            <span>
+            <div class="flex">
               <h2 class="h2">Is Frontend Mentor free?</h2>
               <img
                 src="./assets/images/icon-plus.svg"
                 alt="add"
                 class="add-button"
               />
-            </span>
+            </div>
             <p class="hidden-text">
               Yes, Frontend Mentor offers both free and premium coding
               challenges, with the free option providing access to a range of
@@ -74,7 +75,7 @@
             </p>
           </section>
           <section class="section" id="three">
-            <span>
+            <div class="flex">
               <h2 class="h2">
                 Can I use Frontend Mentor projects in my portfolio?
               </h2>
@@ -83,7 +84,7 @@
                 alt="add"
                 class="add-button"
               />
-            </span>
+            </div>
             <p class="hidden-text">
               Yes, you can use projects completed on Frontend Mentor in your
               portfolio. It's an excellent way to showcase your skills to
@@ -91,7 +92,7 @@
             </p>
           </section>
           <section class="section" id="four">
-            <span>
+            <div class="flex">
               <h2 class="h2">
                 How can I get help if I'm stuck on a Frontend Mentor challenge?
               </h2>
@@ -100,7 +101,7 @@
                 alt="add"
                 class="add-button"
               />
-            </span>
+            </div>
             <p class="hidden-text">
               The best place to get help is inside Frontend Mentor's Discord
               community. There's a help channel where you can ask questions and
